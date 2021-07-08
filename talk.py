@@ -9,7 +9,7 @@ def talk(content,userid):
     
     url = "http://www.tuling123.com/openapi/api"
     s = requests.session()
-    d={"key":"c69585cd12a65331ad35b90bda8856","info":content,"userid":userid}
+    d={"key":"********************","info":content,"userid":userid}
     data = json.dumps(d)
     r = s.post(url,data = data)
     text = json.loads(r.text)
